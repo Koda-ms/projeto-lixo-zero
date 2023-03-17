@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
 .home-container{
     display: flex;
     justify-content: space-around;
@@ -18,6 +20,7 @@
 
 .title h1{
     font-size: 38px;
+    color: #5379f6;
 }
 
 .cta button{
@@ -46,4 +49,109 @@
     max-width: 100%;
     width: 500px;
     height: auto;
+}
+
+/* FEATURES SECTION */
+
+.box{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 7px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.resources-sec h2{
+    margin-top: 3.6rem;
+    font-size: 30px;
+}
+
+.box ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 60px 0;
+}
+
+.box li{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 4px;
+    margin: 0.5rem;
+    padding: 18px;
+    background: #5379f6;
+    color: white;
+    max-width: 100%;
+    width: 300px;
+}
+
+.box li strong{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.box li p{
+    font-size: 15px;
+}
+
+/* ABOUT SECTION */
+
+.about-sec{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-sec img{
+    max-width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.about-sec h2{
+    position: absolute;
+    font-size: 35px;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+    color: white;
+}
+
+.description-text{
+    position: absolute;
+    height: 300px;
+
+    margin-top: 4rem;
+    margin-right: 45rem;
+    margin-left: 6rem;
+    padding: 1.5rem 3rem;
+    border-radius: .3rem;
+    background-color: white;
+}
+
+.description-text p{
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    margin-top: .8rem;
+}
+
+.social-media a{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-media a svg{
+    margin-right: .5em;
+    margin-left: .5em;
 }
