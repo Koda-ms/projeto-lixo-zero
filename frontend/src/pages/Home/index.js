@@ -14,7 +14,7 @@ function Home(){
                     <div className='title'>
                         <h1>Limpeza Fácil</h1>
                         <h1>Otimizando a coleta de resíduos</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>A solução para administrar rotas de trajeto e aprimorar o desempnho da limpeza <br/>por meio de sensores e coletividade.</p>
                     </div>
                     <div className='cta'>
                         <button>Cadastre-se</button>
