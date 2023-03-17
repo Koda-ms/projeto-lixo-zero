@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #ebebeb;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.10);
+    z-index: 99;
+}
+
+.container div img{
+    display: block;
+    margin: auto;
+    width: 37px;
+    height: auto;
+}
+
+.container button{
+    border: 0;
+    border-radius: 0.4rem;
+    background-color: #5379f6;
+    padding: 0.3rem 0.9rem;
+}
+
+.container span{
+    color: white;
+}
+
+.container a{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 14px;
+    z-index: 99;
+    transition: all .1s;
+}
+
+.container a:hover{
+    color: #5379f6;
+}
