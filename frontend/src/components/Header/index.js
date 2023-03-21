@@ -19,7 +19,7 @@ function Header(){
             <Link to='/signup'>
                 Cadastro
             </Link>
-            <button><Link to='/signin'>
+            <button><Link to='/login'>
                 <span>Login</span>
             </Link></button>
         </div>
