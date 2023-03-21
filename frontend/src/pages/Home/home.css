@@ -63,8 +63,9 @@
 }
 
 .resources-sec h2{
-    margin-top: 3.6rem;
+    text-transform: uppercase;
     font-size: 30px;
+    margin-top: 3.6rem;
 }
 
 .box ul{
@@ -96,46 +97,58 @@
     font-size: 15px;
 }
 
+@media screen and (max-width: 1000px){
+    .box ul{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        margin-top: 20px;
+    }
+}
+
 /* ABOUT SECTION */
 
-.about-sec{
+.about-sec-container{
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    background-color: #5379f6;
+}
+
+.about-sec-content{
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.about-sec-content .description-text{
+    width: 500px;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: .4rem;
+    background-color: #eee;
+}
+
+.about-sec-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #eee;
+}
+
+.img-section{
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
-.about-sec img{
+.img-section img{
     max-width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.about-sec h2{
-    position: absolute;
-    font-size: 35px;
-    text-align: center;
-    top: 100px;
-    left: 100px;
-    color: white;
-}
-
-.description-text{
-    position: absolute;
-    height: 300px;
-
-    margin-top: 4rem;
-    margin-right: 45rem;
-    margin-left: 6rem;
-    padding: 1.5rem 3rem;
-    border-radius: .3rem;
-    background-color: white;
-}
-
-.description-text p{
-    font-family: 'Poppins';
-    font-size: 15px;
+    width: 450px;
+    height: auto;
 }
 
 .social-media{
@@ -154,4 +167,30 @@
 .social-media a svg{
     margin-right: .5em;
     margin-left: .5em;
+}
+
+@media screen and (max-width: 1000px){
+    .about-sec-container{
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .about-sec-content{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .about-sec-content .description-text{
+        width: 400px;
+    }
+
+    /* .img-section{
+        display: block;
+        margin: auto;
+        width: 100%;
+    } */
 }
