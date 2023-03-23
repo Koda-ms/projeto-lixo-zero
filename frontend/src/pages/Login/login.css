@@ -1,65 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-
-.login-container{
+.input-box-login{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+    margin-bottom: 1.1rem;
 }
 
-.login-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.login-title h2{
-    font-family: 'Poppins';
-    font-size: 34px;
-    height: 20vh;
-}
-
-.logo{
-    background: #EAEAEC;
-    width: 500px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: .5rem;
-}
-
-.logo a{
-    margin: 1.5em 0;
-    color: #121212;
-    cursor: pointer;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-top: 1.5em;
-}
-
-.form input{
-    margin-bottom: 18px;
-    height: 35px;
+.input-box-login input{
+    margin: 0.6rem 0.6rem;
+    padding: 0.8rem 1.2rem;
     border: 0;
-    border-radius: 7px;
-    padding: 15px;
-    font-size: 15px;
-}
-
-.form button{
-    height: 35px;
-    margin-top: 15px;
-    border: 0;
-    border-radius: 7px;
-    font-size: 1.3em;
-    color: #EAEAEC;
-    background-color: #5379f6;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
 }
