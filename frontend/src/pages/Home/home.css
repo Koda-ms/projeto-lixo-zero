@@ -29,13 +29,16 @@
     padding: 0.9rem 1.3rem;
     margin-top: 1.5rem;
     font-weight: 600;
-    color: white;
     background-color: #5379f6;
     transition: all 0.3s;
 }
 
 .cta button:hover{
     background-color: #2f5ef9;
+}
+
+.cta a{
+    color: white;
 }
 
 .home-icon{
@@ -113,7 +116,7 @@
     justify-content: space-around;
     align-items: center;
     max-width: 100%;
-    background-color: #5379f6;
+    background-color: #728de8;
 }
 
 .about-sec-content{

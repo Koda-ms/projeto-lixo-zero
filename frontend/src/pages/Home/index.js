@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
 import Header from '../../components/Header';
 import homeIcon from '../../assets/coleta-inteligente.png';
@@ -19,7 +20,9 @@ function Home(){
                         <p>A solução para aprimorar o desempenho da limpeza e administrar rotas de coleta<br/>por meio de sensores e coletividade.</p>
                     </div>
                     <div className='cta'>
-                        <button>Cadastre-se</button>
+                        <button>
+                            <Link to='/signup'>Cadastre-se</Link>
+                        </button>
                     </div>
                 </div>
 
