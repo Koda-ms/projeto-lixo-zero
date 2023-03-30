@@ -3,9 +3,9 @@ import { TfiMapAlt, TfiPanel } from 'react-icons/tfi';
 import { SlLogout } from 'react-icons/sl';
 import profileAvatar from '../../assets/undraw_profile_pic_re_iwgo.svg';
 import './sidebar.css';
-import '../../config';
 
 function Sidebar() {
+
     return(
         <div className='sidebar'>
             <div>
@@ -24,7 +24,6 @@ function Sidebar() {
                 <SlLogout color='#fff' size={24}/>
                 Sair
             </Link>
-            
         </div>
     );
 }
