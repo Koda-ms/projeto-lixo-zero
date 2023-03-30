@@ -1,0 +1,24 @@
+/* .panel-container{
+    display: flex;
+    float: right;
+    width: 85%;
+    height: 100vh;
+    background-color: rgb(245,245,245);
+} */
+
+.panel-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.box-info{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    margin: 0 10px;
+    padding: 30px;
+}
