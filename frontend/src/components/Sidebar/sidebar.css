@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 200px;
+    width: 15%;
     background-color: #193286;
     position: fixed;
     overflow: auto;
@@ -46,6 +46,14 @@
 .sidebar a:hover{
     background-color: #2a4294;
     color: white;
+}
+
+/* SETTINGS TO THE TITLE COMPONENT*/
+.panel-content{
+    margin-left: 180px;
+    padding: .5em 1.9em;
+    height: 100vh;
+    background-color: rgb(245,245,245);
 }
 
 @media screen and (max-width: 700px){
