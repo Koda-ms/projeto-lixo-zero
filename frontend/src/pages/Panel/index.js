@@ -47,6 +47,27 @@ function Panel() {
                             <span>{status.empty}</span>
                         </div>
                     </div>
+
+                    <div className='sensor-container-group'>
+                        <div className='sensor-content-box'>
+                            <div className='sensor-data-box'>
+                                <h3>63</h3>
+                                <span>Quantidade de Sensores</span>
+                            </div>
+                            <div className='sensor-data-box'>
+                                <h3>78.756</h3>
+                                <span>Peso - kg</span>
+                            </div>
+                            <div className='sensor-data-box'>
+                                <h3>952</h3>
+                                <span>Volume - m³</span>
+                            </div>
+                        </div>
+
+                        <div className='sensor-data-graphic'>
+                            <h3>OI</h3>
+                        </div>
+                    </div>
             </div>
         </div>
     );

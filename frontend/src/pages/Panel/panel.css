@@ -1,10 +1,4 @@
-/* .panel-container{
-    display: flex;
-    float: right;
-    width: 85%;
-    height: 100vh;
-    background-color: rgb(245,245,245);
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
 .panel-container{
     display: flex;
@@ -21,4 +15,30 @@
     width: 100%;
     margin: 0 10px;
     padding: 30px;
+}
+
+.sensor-container-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.sensor-content-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 16%;
+}
+
+.sensor-data-box{
+    margin: 1.6rem .8rem;
+    padding: .7rem 0;
+    width: 150px;
+    border-radius: .3rem;
+
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 14px;
+    background-color: #7e9af9;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
 }
