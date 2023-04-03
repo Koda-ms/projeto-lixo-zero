@@ -28,7 +28,7 @@ function Login(){
                                 </div>
                             </div>
                             <div className='signup-btn'>
-                                <button>Entrar</button>
+                                <Link to='/panel'><button>Entrar</button></Link>
                             </div>
                         </form>
                         <Link to='/signup'>Não possui uma conta? Crie uma aqui!</Link>
