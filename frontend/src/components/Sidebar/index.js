@@ -20,7 +20,7 @@ function Sidebar() {
                 <TfiMapAlt color='#fff' size={24}/>
                 Rota de coleta
             </Link>
-            <Link to='/logout'>
+            <Link to='/'>
                 <SlLogout color='#fff' size={24}/>
                 Sair
             </Link>
