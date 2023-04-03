@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Chart from '../../components/Chart';
 import Sidebar from '../../components/Sidebar';
 import Title from '../../components/Title';
 import './panel.css';
@@ -50,6 +51,9 @@ function Panel() {
 
                     <div className='sensor-container-group'>
                         <div className='sensor-content-box'>
+                            <div className='sensor-content-title'>
+                                <span>Dados diários</span>
+                            </div>
                             <div className='sensor-data-box'>
                                 <h3>63</h3>
                                 <span>Quantidade de Sensores</span>
@@ -65,7 +69,7 @@ function Panel() {
                         </div>
 
                         <div className='sensor-data-graphic'>
-                            <h3>OI</h3>
+                            <Chart/>
                         </div>
                     </div>
             </div>

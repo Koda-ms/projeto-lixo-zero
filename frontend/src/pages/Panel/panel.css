@@ -3,7 +3,7 @@
 .panel-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 100%;
 }
 
@@ -25,8 +25,16 @@
 .sensor-content-box{
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 3rem;
     width: 16%;
+}
+
+.sensor-content-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .sensor-data-box{
@@ -41,4 +49,37 @@
     background-color: #7e9af9;
     color: white;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+.sensor-data-graphic{
+    display: flex;
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 1253px){
+    /*1253 tá bom ainda*/
+    .panel-content{
+        width: 100%;
+        height: auto;
+        float: right;
+    }
+    .sensor-container-group{
+        flex-direction: column;
+    }
+    .sensor-content-box{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .sensor-data-graphic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sensor-data-graphic{
+        display: flex;
+    }
 }
