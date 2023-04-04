@@ -1,0 +1,31 @@
+
+.analysis-content{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+}
+
+.analysis-box{
+    width: 58%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #94abf8;
+    border-radius: 6px;
+    padding: 3rem;
+}
+
+.analysis-image{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 20vh;
+}
+
+.analysis-image img{
+    width: 35rem;
+}

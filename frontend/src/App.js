@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Panel from './pages/Panel';
 import Contact from './pages/Contact';
+import Analysis from './pages/Analysis';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route element={ <Signup/> } path='/signup'/>
         <Route element={ <Panel/> } path='/panel'/>
         <Route element={ <Contact/> } path='/contact'/>
+        <Route element={ <Analysis/> } path='/analysis'/>
       </Routes>
     </BrowserRouter>
   );
