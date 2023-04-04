@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Sidebar from '../../components/Sidebar';
 import Title from '../../components/Title';
+import Header from '../../components/Header'
 import map from '../../assets/map.png';
 import './analysis.css';
 
@@ -51,30 +52,43 @@ function Analysis() {
 
     return(
         <div>
+            <Header/>
             <Sidebar/>
             <div className='analysis-content'>
                 <Title/>
+
                     <div className='signup-container'>
                         <div className='analysis-box'>
-                            <div classname='analysis-content'>
-                                <div className='analysis-image'>
-                                    <img src={map} alt='map'/>
-                                </div>
+                            <div className='analysis-header'>
+                                <h2>Área: Campus UFRPE</h2>
+                            </div>
+
+                            <div className='analysis-image'>
+                                <img src={map} alt='map'/>
                             </div>
                         </div>
-                    <div style={{'background':'linear-gradient(45deg, #FF5370, #ff869a)'}} className='box-info'>
-                        <h3>Lixeiras Cheias</h3>
-                        <span>{status.full}</span>
                     </div>
-                    <div style={{'background':'linear-gradient(45deg, #4099ff, #73b4ff)'}} className='box-info'>
-                        <h3>Lixeiras Medianas</h3>
-                        <span>{status.medium}</span>
+
+                    <div className='analysis-panel-container'>
+
+                        <div style={{'background':'linear-gradient(45deg, #94abf8, #869ef0'}} className='status-box'>
+                            <h2>Status da Área: </h2>
+                        </div>
+
+                        <div style={{'background':'linear-gradient(45deg, #FF5370, #ff869a)'}} className='analysis-box-info'>
+                            <h3>Lixeiras Cheias</h3>
+                            <span>{status.full}</span>
+                        </div>
+                        <div style={{'background':'linear-gradient(45deg, #4099ff, #73b4ff)'}} className='analysis-box-info'>
+                            <h3>Lixeiras Medianas</h3>
+                            <span>{status.medium}</span>
+                        </div>
+                        <div style={{'background':'linear-gradient(45deg, #17ae21, #1bcd27)'}} className='analysis-box-info'>
+                            <h3>Lixeiras Vazias</h3>
+                            <span>{status.empty}</span>
+                        </div>
                     </div>
-                    <div style={{'background':'linear-gradient(45deg, #17ae21, #1bcd27)'}} className='box-info'>
-                        <h3>Lixeiras Vazias</h3>
-                        <span>{status.empty}</span>
-                    </div>
-                </div>
+                    
             </div>
         </div>
     );
