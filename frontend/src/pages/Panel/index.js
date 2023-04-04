@@ -8,6 +8,7 @@ import './panel.css';
 function Panel() {
 
     const[status, setStatus] = useState([]);
+    const[sensorQtt, setSensorQtt] = useState();
 
     useEffect(() => {
 
@@ -27,6 +28,26 @@ function Panel() {
         getStatus();
     }, []);
     // console.log(status.status_trash.full);
+
+    useEffect(() => {
+        async function getSensorQuantity() {
+            let response = await axios.get('/status/lz-get-status', { 
+                headers: {
+                    'Ocp-Apim-Subscription-Key': 'fb3b51c48ae843aca4d099c759a732f9'
+                },
+                params: {
+                    'type': 'raw'
+                }
+            })
+            .then((response) => response.data)
+            .catch((error) => {
+                console.log(error);
+            })
+            //console.log(response);
+            setSensorQtt(response.sensor_quantity); 
+        }
+        getSensorQuantity();
+    }, []);
 
     return(
         <div>
@@ -55,7 +76,7 @@ function Panel() {
                                 <span>Dados diários</span>
                             </div>
                             <div className='sensor-data-box'>
-                                <h3>63</h3>
+                                <h3>{sensorQtt}</h3>
                                 <span>Quantidade de Sensores</span>
                             </div>
                             <div className='sensor-data-box'>
